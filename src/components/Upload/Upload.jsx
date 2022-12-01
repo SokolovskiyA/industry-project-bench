@@ -7,22 +7,16 @@ import uncat from "../../assets/images/uncat.png";
 import { useNavigate } from "react-router-dom";
 import Popover from "../Poppver/Popover";
 import card5 from "../../assets/images/card5.png";
-const Upload = ({ number, setNumber, closeHandler }) => {
-	const navigate = useNavigate();
-	const nav = () => {
-		navigate("/demo/dashboard/upload");
-	};
-
-import drop from '../../assets/images/drop.png'
-import docs from '../../assets/images/docs.png'
-import uncat from '../../assets/images/uncat.png'
 import DialoguePopper from "../DialoguePopper/DialoguePopper";
 
 
 
 
-const Upload = ()=>{
-
+const Upload = ({ number, setNumber, closeHandler }) => {
+	const navigate = useNavigate();
+	const nav = () => {
+		navigate("/demo/dashboard/upload");
+	};
 	return (
 		<div className="upload">
 			<Sidebar />

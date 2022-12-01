@@ -15,7 +15,7 @@ export default function MainHeader(params){
                     <li className="main__navItem"> Community</li>
                 </ul>
             </div>
-            <Link className="main__logoIcon" to="/"><div className="main__logo">
+            <Link className="main__logoLink" to="/"><div className="main__logo">
                 <img
                     className='main__logoIcon--blue'
                     src={benchBlue}
