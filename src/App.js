@@ -15,11 +15,9 @@ function App() {
 	return (
 		<div className="App">
 			<BrowserRouter>
-
 				<Routes>
-					<Route path="/" element={<DashboardHeader />} />
+					<Route path="/" element={<Home />} />
 					<Route path="/dashboard" element={<Dashboard />}/>
-
 				</Routes>
 			</BrowserRouter>
 		</div>

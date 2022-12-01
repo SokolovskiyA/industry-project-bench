@@ -1,4 +1,5 @@
 import "./DashboardHeader.scss";
+import IncomeStatement from "../IncomeStatement/IncomeStatement";
 
 //icons
 import calendarIcon from '../../assets/icons/svg6.svg';
@@ -60,6 +61,7 @@ const DashboardHeader = () => {
 					<li className="navbar__nav-item">Documents</li>
 				</ul>
 			</div>
+			<IncomeStatement />
 		</div>
 		</div>
 	);
