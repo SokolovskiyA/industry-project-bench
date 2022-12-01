@@ -3,6 +3,9 @@ import "./Popover.scss";
 const Popover = ({ step, header, description }) => {
 	return (
 		<div className="popover">
+            <div className="popover__triangle-container">
+                <div className="popover__triangle"></div>
+            </div>
 			<div className="popover__card">
 				<div className="popover__card-nav">
 					<p className="popover__step">Step 2 of 15</p>

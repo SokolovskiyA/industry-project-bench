@@ -1,10 +1,12 @@
 import "./App.scss";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-//components
+//pages
+import Home from "./components/Home/Home";
+import Dashboard from "./components/Dashboard/Dashboard";
+import Popover from "./components/Poppver/Popover";
 import DashboardHeader from "./components/DashboardHeader/DashboardHeader";
 
-import Popover from "./components/Poppver/Popover";
 
 //pages
 
@@ -12,13 +14,14 @@ function App() {
 	return (
 		<div className="App">
 			<BrowserRouter>
-			
-			<Routes>
-			<Route path="/" element={<DashboardHeader />}/>
 
-			</Routes>
+      		<Popover />
+				<Routes>
+					<Route path="/" element={<DashboardHeader />} />
+					<Route path="/dashboard" element={<Dashboard />}/>
+
+				</Routes>
 			</BrowserRouter>
-      
 		</div>
 	);
 }
