@@ -14,15 +14,15 @@ function Sidebar() {
     return (
         <div className='sidebar'>
             <div className='sidebar__button-div'>
-                <button className="sidebar__button"><img src={bench} alt="button-logo"/><span className='sidebar__button-text'>Bench</span></button>
-                <button className="sidebar__button"><img src={messages} alt="button-logo"/><span className='sidebar__button-text'>Messages</span></button>
-                <button className="sidebar__button"><img src={accounting} alt="button-logo"/><span className='sidebar__button-text'>Accounting</span></button>
-                <button className="sidebar__button"><img src={benchTax} alt="button-logo"/><span className='sidebar__button-text'>Bench Tax</span></button>
+                <button className="sidebar__button"><img className='sidebar__button-logo' src={bench} alt="button-logo"/><span className='sidebar__button-text'>Bench</span></button>
+                <button className="sidebar__button"><img className='sidebar__button-logo' src={messages} alt="button-logo"/><span className='sidebar__button-text'>Messages</span></button>
+                <button className="sidebar__button"><img className='sidebar__button-logo' src={accounting} alt="button-logo"/><span className='sidebar__button-text'>Accounting</span></button>
+                <button className="sidebar__button"><img className='sidebar__button-logo' src={benchTax} alt="button-logo"/><span className='sidebar__button-text'>Bench Tax</span></button>
             </div>
             <div className='sidebar__button-div'>
-                <button className="sidebar__button"><img src={account} alt="button-logo"/><span className='sidebar__button-text'>Account</span></button>
-                <button className="sidebar__button"><img src={reward} alt="button-logo"/><span className='sidebar__button-text'>Rewards</span></button>
-                <button className="sidebar__button"><img src={logout} alt="button-logo"/><span className='sidebar__button-text'>Logout</span></button>
+                <button className="sidebar__button"><img className='sidebar__button-logo' src={account} alt="button-logo"/><span className='sidebar__button-text'>Account</span></button>
+                <button className="sidebar__button"><img className='sidebar__button-logo' src={reward} alt="button-logo"/><span className='sidebar__button-text'>Rewards</span></button>
+                <button className="sidebar__button"><img className='sidebar__button-logo' src={logout} alt="button-logo"/><span className='sidebar__button-text'>Logout</span></button>
             </div>
         </div>
     )

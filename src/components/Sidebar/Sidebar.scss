@@ -1,9 +1,9 @@
 .sidebar {
-    width: 10%;
+    width: 12%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
+    background-color: #FFF;
     &__button-div {
         width: 80%;
         display: flex;
@@ -12,6 +12,21 @@
         align-items: center;
     }
     &__button {
+        background-color: #FFF;
         width: 100%;
+        border-radius: .5rem;
+        border: none;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 0.5rem;
+        padding: 0.5rem 1rem;
+    }
+    &__button:hover {
+        background-color: #284381;
+        color: white;
+    }
+    &__button-logo {
+        width: 1.2rem;
     }
 }
