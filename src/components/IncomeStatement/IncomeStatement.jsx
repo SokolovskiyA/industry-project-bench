@@ -7,6 +7,7 @@ import Popover from "../Poppver/Popover";
 import card3 from '../../assets/images/card3.png'
 import "./IncomeStatement.scss";
 import { useNavigate } from "react-router-dom";
+import DialoguePopper from "../DialoguePopper/DialoguePopper";
 
 function IncomeStatement({number, setNumber , closeHandler}) {
 const navigate=useNavigate();
@@ -49,6 +50,7 @@ const navigate=useNavigate();
 						/>
 					</div>
 				</div>
+				<DialoguePopper />
 			</div>
 		</div>
 	);

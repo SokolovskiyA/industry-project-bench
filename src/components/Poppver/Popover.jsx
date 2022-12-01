@@ -4,6 +4,8 @@ import { useNavigate } from "react-router-dom";
 import close from "../../assets/icons/FABexit.png";
 import background from "../../assets/images/card-background.png";
 import semiCircle from "../../assets/images/semi-circle.svg";
+
+
 const Popover = ({
 	number,
 	step,
@@ -50,8 +52,9 @@ const Popover = ({
 					<p
 						className="popover__closeButton"
 						onClick={(e) => {
-							setOpen(false);
-							setClassName(`${className} hide`);
+							// set1Open(false);
+							// setOpen(false);
+							// setClassName(`${className} hide`);
 							navigate(`/`);
 						}}
 					>

@@ -12,6 +12,17 @@ const Upload = ({ number, setNumber, closeHandler }) => {
 	const nav = () => {
 		navigate("/demo/dashboard/upload");
 	};
+
+import drop from '../../assets/images/drop.png'
+import docs from '../../assets/images/docs.png'
+import uncat from '../../assets/images/uncat.png'
+import DialoguePopper from "../DialoguePopper/DialoguePopper";
+
+
+
+
+const Upload = ()=>{
+
 	return (
 		<div className="upload">
 			<Sidebar />
@@ -38,6 +49,7 @@ const Upload = ({ number, setNumber, closeHandler }) => {
 					<img src={uncat} alt="" />
 					<img src={docs} alt="" />
 				</div>
+				<DialoguePopper />
 			</div>
 		</div>
 	);

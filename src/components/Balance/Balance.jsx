@@ -6,11 +6,16 @@ import assets from "../../assets/images/assets.png";
 import Popover from "../Poppver/Popover";
 import card4 from '../../assets/images/card4.png'
 import { useNavigate } from "react-router-dom";
+import DialoguePopper from "../DialoguePopper/DialoguePopper";
+
 const Balance = ({number, setNumber , closeHandler}) => {
 	const navigate = useNavigate();
 	const nav = () => {
 		navigate("/demo/dashboard/upload");
 	};
+
+
+const Balance = () => {
 	return (
 		<div className="balance">
 			<Sidebar />
@@ -37,6 +42,7 @@ const Balance = ({number, setNumber , closeHandler}) => {
 					<img src={balance} alt="" />
 					<img src={assets} alt="" />
 				</div>
+				<DialoguePopper />
 			</div>
 		</div>
 	);

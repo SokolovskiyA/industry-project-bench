@@ -1,0 +1,44 @@
+.dialogue{
+    // width: 100%;
+    position: sticky;
+    bottom: 0;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    &__position{
+        // display: flex;
+        // flex-direction: column;
+        // justify-content: right;
+        position: relative;
+        right: 1rem;
+        flex-direction: column;
+
+    }
+
+    &__closeIcon{
+        height: 30px;
+        width: auto;
+        position: absolute;
+        // right: 5px;
+    }
+    &__helpCard{
+        display: flex;
+        justify-content: flex-end;
+    }
+    &__helpImg{
+        height: 300px;
+        width: auto;
+        // position: absolute;
+        // right: 1rem;
+    }
+    &__floatBtnImg{
+        height: 65px;
+        width: auto;
+        display: flex;
+        justify-content: flex-end;
+        // position: absolute;
+        // right: 1rem;
+    }
+}

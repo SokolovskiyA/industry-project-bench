@@ -6,6 +6,8 @@ import Popover from "../Poppver/Popover";
 import { useState } from "react";
 import card2 from "../../assets/images/card2.png";
 import { useNavigate } from "react-router-dom";
+import DialoguePopper from "../DialoguePopper/DialoguePopper";
+
 const AccountingWidgets = ({ setNumber, number }) => {
 	const [open, setOpen] = useState(true);
 
@@ -67,6 +69,7 @@ const AccountingWidgets = ({ setNumber, number }) => {
 					</div>
 				</div>
 			</div>
+			<DialoguePopper />
 		</div>
 	);
 };
