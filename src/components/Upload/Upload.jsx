@@ -8,6 +8,7 @@ import { useNavigate } from "react-router-dom";
 import Popover from "../Poppver/Popover";
 import card5 from "../../assets/images/card5.png";
 import DialoguePopper from "../DialoguePopper/DialoguePopper";
+
 import SignUpModal from "../SignUpModal/SignUpModal";
 import { useState } from "react";
 
@@ -20,6 +21,7 @@ const Upload = ({ number, setNumber, closeHandler }) => {
 	const [show, setShow] = useState(false);
 
 	
+
 
 	return (
 		<div className="upload">

@@ -15,7 +15,6 @@ const Balance = ({number, setNumber , closeHandler}) => {
 	};
 
 
-// const Balance = () => {
 	return (
 		<div className="balance">
 			<Sidebar />
