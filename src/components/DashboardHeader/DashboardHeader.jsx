@@ -10,6 +10,7 @@ import rewardIcon from '../../assets/icons/svg4.svg';
 
 
 
+
 const DashboardHeader = () => {
 	return (
 		<div className="navbar">

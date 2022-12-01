@@ -2,6 +2,7 @@
 	width: 88%;
 	background-color: #e4e5e9;
 	padding: 2rem 0;
+    // width: 80%;
 	&__container {
 		width: 80%;
 		margin: 0 auto;
@@ -35,6 +36,9 @@
 		background-color: #f9d38e;
 		border: 2px solid #e4a243;
 	}
+    &__surprise{
+        background-color: RGB(241, 209, 149);
+    }
 
 	&__middle {
 		margin: 1rem 0;

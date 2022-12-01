@@ -17,8 +17,8 @@ $desktop-width: 1280px;
 }
 
 body { 
-  max-width: 80rem;
-  margin: auto;
+//   max-width: 80rem;
+//   margin: auto;
 }
 
 body,h1,h2,h3,h4,h5,li,p{
@@ -33,4 +33,9 @@ li{
 }
 a{
     text-decoration: none;
+}
+
+img{
+    width: 100%;
+    height: auto;
 }

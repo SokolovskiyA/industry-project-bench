@@ -7,17 +7,15 @@ import Dashboard from "./components/Dashboard/Dashboard";
 import Popover from "./components/Poppver/Popover";
 
 
-
-
-//pages
-
 function App() {
 	return (
 		<div className="App">
 			<BrowserRouter>
+
 				<Routes>
 					<Route path="/" element={<Home />} />
-					<Route path="/dashboard" element={<Dashboard />}/>
+					<Route path="/demo/dashboard" element={<Dashboard />} />
+
 				</Routes>
 			</BrowserRouter>
 		</div>
