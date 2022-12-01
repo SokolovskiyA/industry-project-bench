@@ -4,6 +4,7 @@ import './Dashboard.scss'
 //components
 import DashboardHeader from '../DashboardHeader/DashboardHeader'
 import Sidebar from '../Sidebar/Sidebar'
+import IncomeStatement from '../IncomeStatement/IncomeStatement'
 
 function Dashboard() {
     return (

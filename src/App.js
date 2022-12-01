@@ -14,12 +14,9 @@ function App() {
 	return (
 		<div className="App">
 			<BrowserRouter>
-
-      <Popover />
 				<Routes>
-					<Route path="/" element={<DashboardHeader />} />
+					<Route path="/" element={<Home />} />
 					<Route path="/dashboard" element={<Dashboard />}/>
-
 				</Routes>
 			</BrowserRouter>
 		</div>

@@ -1,4 +1,5 @@
 import "./DashboardHeader.scss";
+import IncomeStatement from "../IncomeStatement/IncomeStatement";
 
 const DashboardHeader = () => {
 	return (
@@ -26,6 +27,7 @@ const DashboardHeader = () => {
 					<li className="navbar__nav-item">Documents</li>
 				</ul>
 			</div>
+			<IncomeStatement />
 		</div>
 		</div>
 	);
