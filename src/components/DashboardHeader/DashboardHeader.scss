@@ -1,4 +1,5 @@
 .navbar {
+	width: 88%;
 	background-color: #e4e5e9;
 	padding: 2rem 0;
     // width: 80%;
@@ -26,6 +27,14 @@
 		padding: 0.5rem 1rem;
 		background-color: #fff;
 		border-radius: 8px;
+		display: flex;
+		align-content: center;
+		justify-content: center;
+		gap: 0.2rem;
+	}
+	&__surprise{
+		background-color: #f9d38e;
+		border: 2px solid #e4a243;
 	}
     &__surprise{
         background-color: RGB(241, 209, 149);
@@ -51,5 +60,8 @@
 			color: white;
 			background-color: #284381;
 		}
+	}
+	&__icons{
+		height: 20px;
 	}
 }

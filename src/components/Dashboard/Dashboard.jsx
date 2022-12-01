@@ -6,6 +6,7 @@ import AccountingWidgets from "../AccountingWidgets/AccountingWidgets";
 import DashboardHeader from "../DashboardHeader/DashboardHeader";
 import Sidebar from "../Sidebar/Sidebar";
 
+
 function Dashboard() {
 	return (
 		<div className="dashboard">

@@ -1,6 +1,10 @@
 .dashboard {
     display: flex;
+
     &__body{
-        width: 100%;
+      flex-wrap: wrap;
+      width: 80rem;
+      margin: auto;
     }
+
 }
