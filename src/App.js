@@ -8,6 +8,7 @@ import Popover from "./components/Poppver/Popover";
 
 
 
+
 //pages
 
 function App() {
@@ -15,7 +16,6 @@ function App() {
 		<div className="App">
 			<BrowserRouter>
 
-      <Popover />
 				<Routes>
 					<Route path="/" element={<DashboardHeader />} />
 					<Route path="/dashboard" element={<Dashboard />}/>
