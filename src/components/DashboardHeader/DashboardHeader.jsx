@@ -62,7 +62,7 @@ const DashboardHeader = () => {
 					<li className="navbar__nav-item">Documents</li>
 				</ul>
 			</div>
-			<IncomeStatement />
+			{/* <IncomeStatement /> */}
 		</div>
 		</div>
 	);
