@@ -13,6 +13,8 @@ const Balance = ({number, setNumber , closeHandler}) => {
 	const nav = () => {
 		navigate("/demo/dashboard/upload");
 	};
+
+
 	return (
 		<div className="balance">
 			<Sidebar />

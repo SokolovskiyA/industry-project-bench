@@ -9,18 +9,24 @@ import Popover from "../Poppver/Popover";
 import card5 from "../../assets/images/card5.png";
 import DialoguePopper from "../DialoguePopper/DialoguePopper";
 
-
-
+import SignUpModal from "../SignUpModal/SignUpModal";
+import { useState } from "react";
 
 const Upload = ({ number, setNumber, closeHandler }) => {
 	const navigate = useNavigate();
 	const nav = () => {
 		navigate("/demo/dashboard/upload");
 	};
+
+	const [show, setShow] = useState(false);
+
+	
+
+
 	return (
 		<div className="upload">
 			<Sidebar />
-			<div className="right-container">
+			<div className="right-container" onClick={()=> setShow(true)}>
 				{number === 5 && (
 					<Popover
 						number={number}
@@ -35,14 +41,19 @@ const Upload = ({ number, setNumber, closeHandler }) => {
 						description={
 							"This is where your securely uploaded documents live ( like tax documents and important exports for your bookkeeping"
 						}
+						// setShow={setShow}
 					/>
 				)}
+				
 				<DashboardHeader />
 				<div className="balance__container">
 					<img src={drop} alt="" />
 					<img src={uncat} alt="" />
 					<img src={docs} alt="" />
 				</div>
+				{
+					show && <SignUpModal/>
+				}
 				<DialoguePopper />
 			</div>
 		</div>
