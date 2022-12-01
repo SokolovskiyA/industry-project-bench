@@ -5,7 +5,9 @@ import ploss from "../../assets/images/ploss.png";
 import Popover from "../Poppver/Popover";
 import { useState } from "react";
 
+
 import DialoguePopper from "../DialoguePopper/DialoguePopper";
+
 const AccountingWidgets = ({ setNumber, number }) => {
 	const [open, setOpen] = useState(true);
 
