@@ -4,6 +4,7 @@ import "./Upload.scss";
 import drop from '../../assets/images/drop.png'
 import docs from '../../assets/images/docs.png'
 import uncat from '../../assets/images/uncat.png'
+import DialoguePopper from "../DialoguePopper/DialoguePopper";
 
 
 
@@ -20,6 +21,7 @@ const Upload = ()=>{
 					<img src={docs} alt="" />
 
 				</div>
+				<DialoguePopper />
 			</div>
 		</div>
 	);

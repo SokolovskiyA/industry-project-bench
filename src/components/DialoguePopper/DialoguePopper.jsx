@@ -16,11 +16,15 @@ export default function DialoguePopper(){
             
             <div className="dialogue__position">
                 {show && <div className='dialogue__helpCard'>
-                    <div className='dialogue__close' onClick={() => {showHandler(false) }}>
+                    <div 
+                    className='dialogue__close' 
+                    onClick={() => {showHandler(false) }}
+                    >
                         <img 
                         className="dialogue__closeIcon"
                         src={closeIcon} 
-                        alt="closeIcon" />
+                        alt="closeIcon" 
+                        />
                     </div>
                     <img className='dialogue__helpImg'
                         src={helpCard}
@@ -28,7 +32,10 @@ export default function DialoguePopper(){
                     ></img>
                 </div>
                 }
-                <div className='dialogue__floatBtn' onClick={() => {showHandler(true)}}>
+                <div 
+                className='dialogue__floatBtn' 
+                onClick={() => {showHandler(true)}}
+                >
                     <img className='dialogue__floatBtnImg'
                     src={helpBtn}
                     alt="help me"
