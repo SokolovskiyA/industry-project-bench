@@ -1,0 +1,110 @@
+.popover {
+	p {
+		font-size: 0.85rem;
+	}
+	h3 {
+		font-size: 1rem;
+	}
+	width: 25.875rem;
+	height: 16.625rem;
+	// max-height: 16rem;
+	// padding: 1rem;
+	color: white;
+	background-color: #05868b;
+	// background: url(`../../../../assets/images/card-background.png);
+	border-radius: 12px;
+    // overflow: hidden;
+	margin-top: 2rem;
+
+	&__card {
+		display: flex;
+		height: 16.625rem;
+
+		&--right {
+			width: 50%;
+			background: url("../../assets//images/semi-circle.svg");
+			background-repeat: no-repeat;
+			background-position-x: right;
+			display: flex;
+			flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-end;
+	border-radius: 12px;
+
+			img {
+				height: 100%;
+			}
+            p{
+                margin: 1rem;
+            }
+		}
+		&--left {
+			width: 50%;
+			padding: 1rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+		}
+	}
+	&__triangle-container {
+		position: relative;
+		// height: 20px;
+
+		width: 100px;
+	}
+	&__closeButton {
+		cursor: pointer;
+		width: 1.75rem;
+        height: 1.75rem;
+	}
+	&__triangle {
+		height: 20px;
+		width: 20px;
+		position: absolute;
+		top: -1.2rem;
+		right: 2rem;
+		width: 0;
+		height: 0;
+		border-left: 20px solid transparent;
+		border-right: 20px solid transparent;
+
+		border-bottom: 20px solid #05868b;
+	}
+
+	&__card-nav {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__card-heading {
+		margin: 0.5rem 0;
+	}
+
+	&__footer {
+		display: flex;
+		justify-content: space-between;
+		margin: 1rem 0;
+		align-items: center;
+
+		&-button-next {
+			padding: 0.5rem 1rem;
+			border-radius: 4px;
+			border: none;
+		}
+
+        &--right{
+            button{
+                background-color:#05868b ;
+                color: white;
+            }
+        }
+	}
+}
+
+
+.card-image{
+    width: 7rem;
+    max-height: 5rem;
+    padding-right: 1.5rem;
+}

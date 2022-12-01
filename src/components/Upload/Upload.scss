@@ -1,0 +1,29 @@
+.upload {
+	display: flex;
+	height: 90vh;
+
+	&__container {
+		width: 80%;
+		margin: 0 auto;
+		background-color: #e4e5e9;
+		img {
+			border-radius: 8px;
+			margin: 1rem 0;
+		}
+	}
+}
+
+.right-container {
+	background-color: #e4e5e9;
+	width: 80%;
+}
+.balance__container {
+	position: relative;
+}
+
+.step5 {
+	position: absolute;
+	top: 250px;
+	left: 48rem;
+    z-index: 1;
+}

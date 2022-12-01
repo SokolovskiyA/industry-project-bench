@@ -1,0 +1,52 @@
+.sidebar {
+
+    // height: 100vh;
+    max-height: 50rem;
+    padding: 2rem 0 2rem;
+    width: 20%;
+    // position: fixed;
+    // top: 100px;
+    // bottom:0;
+    // left: 0;
+
+    display: flex;
+    // align-self: stretch;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #FFF;
+    &__button-div {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+    }
+    &__button {
+        background-color: #FFF;
+        width: 100%;
+        border-radius: .5rem;
+        border: none;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 0.5rem;
+        padding: 1rem 1.5rem;
+        &--accounting{
+        background-color: #05868B;
+        color: white;
+        img{
+            color: white;
+            fill: #fff;
+        }
+
+        }
+    }
+    &__button:hover {
+        background-color: #05868B;
+        color: white;
+    }
+    &__button-logo {
+        width: 1.2rem;
+    }
+}
