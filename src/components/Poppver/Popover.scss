@@ -1,0 +1,30 @@
+.popover{
+    width: 21.875rem;
+    // height: 15.625rem;
+    padding: 1rem;
+    color: white;
+    background-color: #284581;
+    border-radius: 12px;
+
+    &__card-nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__card-heading{
+        margin: .5rem 0;
+    }
+
+    &__footer{
+        display: flex;
+        justify-content: space-between;
+        margin: 1rem 0;
+        align-items: center;
+
+        &-button-next{
+            padding: .5rem 1rem;
+            border-radius: 4px;
+            border: none;
+        }
+    }
+}
