@@ -5,7 +5,8 @@ import benchWhite from '../../assets/logo/bench-white.png';
 export default function MainHeader(params){
 
     return(
-        <div className="main main--blue">
+       <div className="main__header--container">
+         <div className="main main--blue">
             <div className="main__right">
                 <ul className="main__navList main__navList--blue">
                     <li className="main__navItem"> Pricing </li>
@@ -34,5 +35,10 @@ export default function MainHeader(params){
                 </ul>
             </div>
         </div>
+
+        <div className="main__last-border">
+            
+        </div>
+       </div>
     );
 }

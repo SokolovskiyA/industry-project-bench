@@ -1,9 +1,19 @@
 .dashboard {
 	display: flex;
+    position: relative;
 
 	&__body {
 		flex-wrap: wrap;
 		width: 80%;
 		margin: auto;
 	}
+}
+
+
+.step1{
+
+    z-index: 1;
+    position: absolute;
+    top: 210px;
+    left: 2rem;
 }

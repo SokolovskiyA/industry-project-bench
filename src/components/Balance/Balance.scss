@@ -1,0 +1,20 @@
+.balance {
+    display: flex;
+
+	&__container {
+		width: 80%;
+		margin: 0 auto;
+        background-color: #E4E5E9;
+        img{
+            border-radius: 8px;
+            margin: 1rem 0;
+        }
+	}
+}
+
+.right-container{
+    background-color: #E4E5E9;
+		width: 80%;
+
+
+}

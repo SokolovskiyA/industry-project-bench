@@ -9,7 +9,7 @@ import benchTax from "../../assets/icons/svg3.svg";
 import account from "../../assets/icons/svg3.svg";
 import reward from "../../assets/icons/svg4.svg";
 import logout from "../../assets/icons/svg5.svg";
-
+import Popover from "../Poppver/Popover";
 function Sidebar() {
 	return (
 		<div className="sidebar">
@@ -34,6 +34,7 @@ function Sidebar() {
 					/>
 					<span className="sidebar__button-text">Accounting</span>
 				</button>
+				
 				<button className="sidebar__button">
 					<img
 						className="sidebar__button-logo"
