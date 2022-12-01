@@ -5,7 +5,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./components/Home/Home";
 import Dashboard from "./components/Dashboard/Dashboard";
 import Popover from "./components/Poppver/Popover";
-import DashboardHeader from "./components/DashboardHeader/DashboardHeader";
+
+
 
 
 //pages
@@ -15,7 +16,6 @@ function App() {
 		<div className="App">
 			<BrowserRouter>
 
-      		<Popover />
 				<Routes>
 					<Route path="/" element={<DashboardHeader />} />
 					<Route path="/dashboard" element={<Dashboard />}/>
