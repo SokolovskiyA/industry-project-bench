@@ -4,7 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 //pages
 import Home from "./components/Home/Home";
 import Dashboard from "./components/Dashboard/Dashboard";
-
+import Popover from "./components/Poppver/Popover";
 
 
 
@@ -14,9 +14,12 @@ function App() {
 	return (
 		<div className="App">
 			<BrowserRouter>
+
+      <Popover />
 				<Routes>
-					<Route path ="/" element={<Home />}/>
+					<Route path="/" element={<DashboardHeader />} />
 					<Route path="/dashboard" element={<Dashboard />}/>
+
 				</Routes>
 			</BrowserRouter>
 		</div>
