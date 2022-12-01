@@ -4,8 +4,8 @@ import login from "../../assets/images/login-ish.png";
 import ploss from "../../assets/images/ploss.png";
 import Popover from "../Poppver/Popover";
 import { useState } from "react";
-
-
+import card2 from "../../assets/images/card2.png";
+import { useNavigate } from "react-router-dom";
 import DialoguePopper from "../DialoguePopper/DialoguePopper";
 
 const AccountingWidgets = ({ setNumber, number }) => {
@@ -13,6 +13,10 @@ const AccountingWidgets = ({ setNumber, number }) => {
 
 	const closeHandler = () => {
 		setOpen(false);
+	};
+	const navigate = useNavigate();
+	const nav = () => {
+		navigate("/demo/dashboard/income");
 	};
 	return (
 		<div className="accounting">
@@ -22,11 +26,15 @@ const AccountingWidgets = ({ setNumber, number }) => {
 						{number === 2 && (
 							<Popover
 								open={open}
+                                number={number}
+                                setNumber={setNumber}
 								closeHandler={closeHandler}
 								setOpen={setOpen}
 								className={"step2"}
 								step={"Step 2 of 15"}
 								header={"View the Status of Your books"}
+								img={card2}
+                                nav={nav}
 								description={
 									"See weather your books are complete and are going through a quality check, in progress or require action"
 								}

@@ -91,7 +91,7 @@ const DashboardHeader = () => {
 								onClick={(e) => {
 									liClickHandler(e);
 								}}
-								className={`navbar__nav-item ${income}`}
+								className={`navbar__nav-item income${income}`}
 							>
 								Income
 							</li>
