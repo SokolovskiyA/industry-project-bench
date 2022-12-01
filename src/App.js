@@ -1,11 +1,11 @@
-import "./App.sass";
+import "./App.scss";
 
-import Header from "./components/Header/Header";
+import DashboardHeader from "./components/DashboardHeader/DashboardHeader";
 
 function App() {
 	return (
 		<div className="App">
-			<Header />
+			<DashboardHeader />
 		</div>
 	);
 }
