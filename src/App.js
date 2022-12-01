@@ -10,7 +10,15 @@ import DashboardHeader from "./components/DashboardHeader/DashboardHeader";
 import MainHeader from "./components/MainHeader/MainHeader";
 import IncomeStatement from "./components/IncomeStatement/IncomeStatement";
 import Upload from "./components/Upload/Upload";
+import { useState } from "react";
 function App() {
+	const [number, setNumber] = useState(1);
+	const [open1, set1Open] = useState(true);
+
+	const closeHandler = () => {
+		set1Open(false);
+	};
+
 	return (
 		<div className="App">
 			<BrowserRouter>
@@ -18,10 +26,30 @@ function App() {
 
 				<Routes>
 					<Route path="/" element={<Home />} />
-					<Route path="/demo/dashboard" element={<Dashboard />} />
-					<Route path="/demo/dashboard/income" element={<IncomeStatement />} />
-					<Route path="/demo/dashboard/balance" element={<Balance />} />
-					<Route path="/demo/dashboard/upload" element={<Upload />} />
+					<Route
+						path="/demo/dashboard"
+						element={
+							<Dashboard
+								number={number}
+								setNumber={setNumber}
+								closeHandler={closeHandler}
+								open1={open1}
+								set1open={set1Open}
+							/>
+						}
+					/>
+					<Route
+						path="/demo/dashboard/income"
+						element={<IncomeStatement number={number} setNumber={setNumber} />}
+					/>
+					<Route
+						path="/demo/dashboard/balance"
+						element={<Balance number={number} setNumber={setNumber} />}
+					/>
+					<Route
+						path="/demo/dashboard/upload"
+						element={<Upload number={number} setNumber={setNumber} />}
+					/>
 				</Routes>
 			</BrowserRouter>
 		</div>
