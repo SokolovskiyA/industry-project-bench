@@ -17,7 +17,8 @@ const Popover = ({
 	closeHandler,
 	setNumber,
 	img,
-	nav
+	nav,
+	setShow
 }) => {
 	const navigate = useNavigate();
 	const [newClassName, setClassName] = useState(className);
@@ -66,6 +67,7 @@ const Popover = ({
 							onClick={() => {
 								setNumber(number + 1);
 								nav();
+								setShow(true);
 							}}
 							className="popover__footer-button-next"
 						>
