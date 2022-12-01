@@ -1,8 +1,15 @@
 .sidebar {
-    width: 12%;
+
+    // height: 100vh;
+    max-height: 55rem;
+    padding: 2rem 0 2rem;
+    width: 20%;
+
     display: flex;
+    // align-self: stretch;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
     background-color: #FFF;
     &__button-div {
         width: 80%;
@@ -20,7 +27,16 @@
         align-items: center;
         justify-content: flex-start;
         gap: 0.5rem;
-        padding: 0.5rem 1rem;
+        padding: 1rem 1.5rem;
+        &--accounting{
+        background-color: #284381;
+        color: white;
+        img{
+            color: white;
+            fill: #fff;
+        }
+
+        }
     }
     &__button:hover {
         background-color: #284381;

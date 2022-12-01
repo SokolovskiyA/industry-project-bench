@@ -1,0 +1,46 @@
+.accounting {
+	background-color: #e4e5e9;
+	&__container {
+		width: 80%;
+		margin: 0 auto;
+	}
+	&__bookkeeping {
+		background-color: #fff;
+		padding: 1rem;
+		border-radius: 0.5rem;
+
+		&__top {
+			display: flex;
+			justify-content: space-between;
+			padding: 1rem 0;
+			border-bottom: 1px dotted black;
+		}
+		&__heading2 {
+			color: #214988;
+		}
+
+		&__bottom {
+			&__bbok-img {
+			}
+		}
+	}
+	&__tax {
+		margin: 2rem 0;
+		padding: 1rem 0;
+		border-radius: 0.5rem;
+		overflow: hidden;
+	}
+
+	&__profit-loss {
+		&__top {
+			display: flex;
+			// flex-direction: column;
+		}
+		&__img {
+			border-radius: 0.5rem;
+			overflow: hidden;
+            margin: 1rem 0;
+            padding: 1rem 0;
+		}
+	}
+}

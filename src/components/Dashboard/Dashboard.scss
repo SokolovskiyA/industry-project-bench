@@ -1,5 +1,9 @@
 .dashboard {
-    display: flex;
-    width: 80rem;
-    margin: auto;
+	display: flex;
+
+	&__body {
+		flex-wrap: wrap;
+		width: 80%;
+		margin: auto;
+	}
 }

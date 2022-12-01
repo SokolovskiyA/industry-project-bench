@@ -1,10 +1,12 @@
 import "./DashboardHeader.scss";
+import IncomeStatement from "../IncomeStatement/IncomeStatement";
 
 //icons
 import calendarIcon from '../../assets/icons/svg6.svg';
 import searchIcon from '../../assets/icons/svg7.svg';
 import callIcon from '../../assets/icons/svg8.svg';
 import rewardIcon from '../../assets/icons/svg4.svg';
+
 
 
 
@@ -60,6 +62,7 @@ const DashboardHeader = () => {
 					<li className="navbar__nav-item">Documents</li>
 				</ul>
 			</div>
+			{/* <IncomeStatement /> */}
 		</div>
 		</div>
 	);
