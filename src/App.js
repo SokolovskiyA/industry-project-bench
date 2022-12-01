@@ -14,7 +14,7 @@ function App() {
 			<BrowserRouter>
 			
 			<Routes>
-			<Route to="/" element={<DashboardHeader />}/>
+			<Route path="/" element={<DashboardHeader />}/>
 
 			</Routes>
 			</BrowserRouter>
