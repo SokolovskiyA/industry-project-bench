@@ -11,14 +11,13 @@ const Popover = ({
 	open1,
 	setOpen,
 	closeHandler,
+	setNumber,
 }) => {
 	const navigate = useNavigate();
 	const [newClassName, setClassName] = useState(className);
-	if (!open1) {
-		return null;
-	}
-
-	
+	// if (!open1) {
+	// 	return null;
+	// }
 
 	const nextHandler = () => {};
 	return (
@@ -51,7 +50,7 @@ const Popover = ({
 					<p className="popover__footer--right">
 						<button
 							onClick={() => {
-								closeHandler();
+								setNumber(2);
 							}}
 							className="popover__footer-button-next"
 						>

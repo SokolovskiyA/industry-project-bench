@@ -4,32 +4,34 @@ import login from "../../assets/images/login-ish.png";
 import ploss from "../../assets/images/ploss.png";
 import Popover from "../Poppver/Popover";
 import { useState } from "react";
-const AccountingWidgets = () => {
+const AccountingWidgets = ({ setNumber, number }) => {
 	const [open, setOpen] = useState(true);
 
-   const closeHandler =()=>{
-    setOpen(false);
-   }
+	const closeHandler = () => {
+		setOpen(false);
+	};
 	return (
 		<div className="accounting">
 			<div className="accounting__container">
 				<div className="accounting__bookkeeping">
 					<div className="accounting__bookkeeping__top">
-                    <Popover
-							open={open}
-							closeHandler={closeHandler}
-                            setOpen={setOpen}
-							className={"step2"}
-							step={"Step 2 of 15"}
-							header={"View the Status of Your books"}
-							description={
-								"See weather your books are complete and are going through a quality check, in progress or require action"
-							}
-						/>
+						{number === 2 && (
+							<Popover
+								open={open}
+								closeHandler={closeHandler}
+								setOpen={setOpen}
+								className={"step2"}
+								step={"Step 2 of 15"}
+								header={"View the Status of Your books"}
+								description={
+									"See weather your books are complete and are going through a quality check, in progress or require action"
+								}
+							/>
+						)}
 						<h3 className="accounting__bookkeeping__heading">
 							Bookkeeping Status
 						</h3>
-						
+
 						<h4 className="accounting__bookkeeping__heading2">
 							SEE OUTSTANDING
 						</h4>
