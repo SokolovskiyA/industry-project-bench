@@ -1,8 +1,8 @@
-import "./App.sass";
+import "./App.scss";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 //components
-import Header from "./components/Header/Header";
+import DashboardHeader from "./components/DashboardHeader/DashboardHeader";
 
 //pages
 
@@ -12,9 +12,9 @@ function App() {
 			<BrowserRouter>
 			
 			<Routes>
+			<Route element={<DashboardHeader />}/>
 
 			</Routes>
-			<Route element={<Header/>}/>
 			</BrowserRouter>
 		</div>
 	);
