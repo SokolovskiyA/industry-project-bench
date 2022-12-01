@@ -14,6 +14,7 @@
 			justify-content: space-between;
 			padding: 1rem 0;
 			border-bottom: 1px dotted black;
+position: relative;
 		}
 		&__heading2 {
 			color: #214988;
@@ -46,5 +47,12 @@
 }
 
 .step2 {
-	display: block;
+	// display: block;
+    position: absolute;
+    top: 25px;
+}
+
+
+.hide{
+    display: none;
 }

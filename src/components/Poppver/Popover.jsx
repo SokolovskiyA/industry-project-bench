@@ -2,19 +2,25 @@ import "./Popover.scss";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-const Popover = ({ number, step, header, description, className, open1, set1Open ,set2Open}) => {
+const Popover = ({
+	number,
+	step,
+	header,
+	description,
+	className,
+	open1,
+	setOpen,
+	closeHandler,
+}) => {
 	const navigate = useNavigate();
-
+	const [newClassName, setClassName] = useState(className);
 	if (!open1) {
 		return null;
 	}
 
-	const nextHandler=()=>{
-if(number===1){
-	set1Open(false);
-	set2Open(true);
-}
-	}
+	
+
+	const nextHandler = () => {};
 	return (
 		<div className={`popover ${className}`}>
 			<div className="popover__triangle-container">
@@ -26,7 +32,8 @@ if(number===1){
 					<p
 						className="popover__closeButton"
 						onClick={(e) => {
-							set1Open(false);
+							setOpen(false);
+							setClassName(`${className} hide`);
 							navigate(`/`);
 						}}
 					>
@@ -42,7 +49,14 @@ if(number===1){
 						<p className="popover__footer-button-prev">Previous</p>
 					</p>
 					<p className="popover__footer--right">
-						<button onClick={nextHandler}className="popover__footer-button-next">Next</button>
+						<button
+							onClick={() => {
+								closeHandler();
+							}}
+							className="popover__footer-button-next"
+						>
+							Next
+						</button>
 					</p>
 				</div>
 			</div>

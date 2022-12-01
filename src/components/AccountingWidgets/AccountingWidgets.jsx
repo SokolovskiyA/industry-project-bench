@@ -5,8 +5,11 @@ import ploss from "../../assets/images/ploss.png";
 import Popover from "../Poppver/Popover";
 import { useState } from "react";
 const AccountingWidgets = () => {
-	const [open, set2Open] = useState(true);
+	const [open, setOpen] = useState(true);
 
+   const closeHandler =()=>{
+    setOpen(false);
+   }
 	return (
 		<div className="accounting">
 			<div className="accounting__container">
@@ -14,7 +17,8 @@ const AccountingWidgets = () => {
 					<div className="accounting__bookkeeping__top">
                     <Popover
 							open={open}
-							set2Open={set2Open}
+							closeHandler={closeHandler}
+                            setOpen={setOpen}
 							className={"step2"}
 							step={"Step 2 of 15"}
 							header={"View the Status of Your books"}
