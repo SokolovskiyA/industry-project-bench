@@ -1,0 +1,45 @@
+.main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    // &--blue{
+    //     background-color: #14305d;
+    //     color: #fff;
+    // }
+    &__navList{
+        display: flex;
+        
+    }
+    &__navItem{
+        display:  flex;
+        padding: 0.5rem;
+    }
+    &__logoIcon{
+        height: 30px;
+        // display: none;
+        
+        &--blue{
+            height: 30px;
+            display: none;
+        }
+    }
+
+    //left side of nav
+    &__contactList{
+        display: flex;
+        padding: 0.5rem;
+        margin-right: 2rem;
+    }
+    &__login, &__tel, &__trial{
+        padding: 0.5rem;
+    }
+    &__trial{
+        background-color: #08868c;
+        color: #fff;
+        // &--blue{
+        //     background-color: #14305d;
+        //     border: 1px solid #fff;
+        // }
+    }
+}
