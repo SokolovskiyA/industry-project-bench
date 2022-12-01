@@ -6,8 +6,6 @@ import Home from "./components/Home/Home";
 import Dashboard from "./components/Dashboard/Dashboard";
 import Popover from "./components/Poppver/Popover";
 
-
-
 //pages
 
 function App() {
@@ -15,11 +13,8 @@ function App() {
 		<div className="App">
 			<BrowserRouter>
 
-      <Popover />
 				<Routes>
-					<Route path="/" element={<DashboardHeader />} />
-					<Route path="/dashboard" element={<Dashboard />}/>
-
+					<Route path="/demo/dashboard" element={<Dashboard />} />
 				</Routes>
 			</BrowserRouter>
 		</div>
