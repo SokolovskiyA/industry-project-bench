@@ -1,10 +1,12 @@
 import "./App.scss";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-//components
-import DashboardHeader from "./components/DashboardHeader/DashboardHeader";
+//pages
+import Home from "./components/Home/Home";
+import Dashboard from "./components/Dashboard/Dashboard";
 
-import Popover from "./components/Poppver/Popover";
+
+
 
 //pages
 
@@ -13,7 +15,8 @@ function App() {
 		<div className="App">
 			<BrowserRouter>
 				<Routes>
-					<Route to="/" element={<DashboardHeader />}/>
+					<Route path ="/" element={<Home />}/>
+					<Route path="/dashboard" element={<Dashboard />}/>
 				</Routes>
 			</BrowserRouter>
 		</div>
