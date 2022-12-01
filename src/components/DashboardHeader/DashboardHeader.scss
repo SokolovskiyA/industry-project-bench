@@ -1,2 +1,51 @@
 .navbar {
+	background-color: #e4e5e9;
+	padding: 2rem 0;
+	&__container {
+		width: 80%;
+		margin: 0 auto;
+	}
+
+	&__top {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__company-name {
+		color: #72757c;
+	}
+	&__list {
+		display: flex;
+	}
+	&__date,
+	&__search,
+	&__call,
+	&__surprise {
+		margin: 0 0.5rem;
+		padding: 0.5rem 1rem;
+		background-color: #fff;
+		border-radius: 8px;
+	}
+
+	&__middle {
+		margin: 1rem 0;
+	}
+
+	&__bottom {
+	}
+	&__nav-item-list {
+		display: flex;
+        justify-content: flex-start;
+        padding: 0;
+	}
+	&__nav-item {
+		margin-right: 0.5rem;
+		padding: 0.5rem 1rem;
+		border-radius: 8px;
+
+		&--active {
+			color: white;
+			background-color: #284381;
+		}
+	}
 }
