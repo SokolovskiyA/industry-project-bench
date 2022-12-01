@@ -1,6 +1,7 @@
 import "./Popover.scss";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { usePopper } from "react-popper";
 
 const Popover = ({
 	number,
@@ -31,8 +32,9 @@ const Popover = ({
 					<p
 						className="popover__closeButton"
 						onClick={(e) => {
-							setOpen(false);
-							setClassName(`${className} hide`);
+							// set1Open(false);
+							// setOpen(false);
+							// setClassName(`${className} hide`);
 							navigate(`/`);
 						}}
 					>

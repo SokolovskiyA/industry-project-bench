@@ -3,6 +3,7 @@ import DashboardHeader from "../DashboardHeader/DashboardHeader";
 import "./Balance.scss";
 import balance from "../../assets/images/balance.png";
 import assets from "../../assets/images/assets.png";
+import DialoguePopper from "../DialoguePopper/DialoguePopper";
 
 const Balance = () => {
 	return (
@@ -14,6 +15,7 @@ const Balance = () => {
 					<img src={balance} alt="" />
 					<img src={assets} alt="" />
 				</div>
+				<DialoguePopper />
 			</div>
 		</div>
 	);

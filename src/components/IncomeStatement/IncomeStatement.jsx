@@ -4,6 +4,7 @@ import incomeBody from "../../assets/income_body.png";
 import Sidebar from "../Sidebar/Sidebar";
 import DashboardHeader from "../DashboardHeader/DashboardHeader";
 import "./IncomeStatement.scss";
+import DialoguePopper from "../DialoguePopper/DialoguePopper";
 
 function IncomeStatement() {
 	return (
@@ -25,6 +26,7 @@ function IncomeStatement() {
 						/>
 					</div>
 				</div>
+				<DialoguePopper />
 			</div>
 		</div>
 	);

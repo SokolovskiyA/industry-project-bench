@@ -4,6 +4,10 @@ import login from "../../assets/images/login-ish.png";
 import ploss from "../../assets/images/ploss.png";
 import Popover from "../Poppver/Popover";
 import { useState } from "react";
+
+
+import DialoguePopper from "../DialoguePopper/DialoguePopper";
+
 const AccountingWidgets = ({ setNumber, number }) => {
 	const [open, setOpen] = useState(true);
 
@@ -57,6 +61,7 @@ const AccountingWidgets = ({ setNumber, number }) => {
 					</div>
 				</div>
 			</div>
+			<DialoguePopper />
 		</div>
 	);
 };
